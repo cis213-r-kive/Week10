@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom';
-
 import product from '../data/product';
 
 function Products() {
   return (
-    <main>
+    <>
       <h1>Our Products</h1>
       <ul id="products-list">
         {product.map((product) => (
@@ -15,7 +14,7 @@ function Products() {
           </li>
         ))}
       </ul>
-    </main>
+    </>
   );
 }
 
